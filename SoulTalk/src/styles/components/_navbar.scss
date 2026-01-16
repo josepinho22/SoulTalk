@@ -1,0 +1,62 @@
+/* ───────────────────────────────────────────────
+     NAVBAR & TITLE
+  ─────────────────────────────────────────────── */
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.brand-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* ensure it sits above the hamburger if needed */
+}
+
+@media (min-width: 960px) {
+  .brand-center {
+    position: static;
+    transform: none;
+    margin-left: 12px; /* optional: re-align on desktop */
+  }
+}
+
+.v-app-bar-nav-icon .v-icon {
+  color: white !important;
+}
+
+.v-toolbar-title {
+  color: white !important;
+}
+.title-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Grenze Gotisch', serif;
+}
+
+/* ───────────────────────────────────────────────
+     DRAWER (MOBILE NAV)
+  ─────────────────────────────────────────────── */
+
+
+.gradient-drawer {
+  background: linear-gradient(90deg, #8A4521 0%, #241209 100%) !important;
+  color: white !important;
+}
+
+.gradient-drawer .v-list-item {
+  background: transparent !important;
+  color: white !important;
+  font-family: 'Grenze Gotisch', serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.gradient-drawer .v-list-item-title {
+  color: white !important;
+}

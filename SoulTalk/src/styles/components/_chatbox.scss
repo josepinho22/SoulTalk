@@ -1,0 +1,48 @@
+.chat-wrapper {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 10000;
+
+  .chat-box {
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 16px;
+    background-color: white;
+    overflow: hidden;
+
+    #message-list {
+      flex: 1;
+    }
+
+    #chat-box-submit {
+      height: 45px;
+    }
+  }
+
+  .text-right, .text-left {
+    display: inline-block;
+  }
+
+  .text-right .request {
+    background-color: #5e2d8c;
+    color: white;
+  }
+
+  .text-left .response {
+    background-color: #f4f4f4;
+    border: 2px solid #5e2d8c;
+  }
+}
+
+#chat-box {
+  width: 70px;
+  height: 65px;
+  background: #5D2B74;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

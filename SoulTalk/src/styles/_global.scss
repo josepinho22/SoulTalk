@@ -1,0 +1,105 @@
+#app {
+  /* ───────────────────────────────────────────────
+     GLOBAL LAYOUT
+  ─────────────────────────────────────────────── */
+  header {
+    all: initial;
+    background-color: transparent;
+    .v-btn.font-heading > .v-btn__content {
+      font-family: 'Grenze Gotisch', serif !important;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      text-transform: uppercase !important;
+      color: #FFFFFF !important;
+    }
+  }
+
+  .v-main {
+    background: linear-gradient(90deg, #8A4521 0%, #241209 100%);
+  }
+
+  .header-spacing {
+    margin-top: 72px;
+  }
+
+  /* ───────────────────────────────────────────────
+     BACKGROUND & MAIN TEXT
+  ─────────────────────────────────────────────── */
+  .bg {
+    background: url('@/assets/church_homepage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .main-txt {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 500;
+    font-size: clamp(32px, 5vw, 64px);
+    color: white;
+    text-align: left;
+    max-width: 600px;
+  }
+
+
+
+
+  /* ───────────────────────────────────────────────
+     TYPOGRAPHY STYLES
+  ─────────────────────────────────────────────── */
+  .subtitle {
+    font-family: 'Grenze Gotisch', serif;
+    font-size: clamp(18px, 2.5vw, 28px);
+    font-style: italic;
+    text-align: center;
+  }
+
+  .verse {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 36px);
+    color: white;
+    text-align: center;
+    white-space: normal;
+  }
+
+  /* ───────────────────────────────────────────────
+     RESPONSIVE STYLES (MOBILE)
+  ─────────────────────────────────────────────── */
+  .fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  @media (max-width: 600px) {
+    .bg {
+      background-image: url('@/assets/church_homepage_mobile.png');
+      background-position: top;
+    }
+
+    .main-txt {
+      text-align: center;
+      font-size: clamp(24px, 5vw, 36px);
+    }
+
+    .hero-section {
+      height: 50vh;
+    }
+
+    .bottom-blur {
+      height: 160px;
+    }
+
+    .responsive-text {
+      font-size: clamp(16px, 3vw, 24px);
+    }
+  }
+}

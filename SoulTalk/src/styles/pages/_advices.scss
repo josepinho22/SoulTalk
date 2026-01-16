@@ -1,0 +1,148 @@
+#page-advices .v-main {
+  /* ───────────────────────────────────────────────
+     ADVICES PAGE
+  ─────────────────────────────────────────────── */
+  .hero-section {
+    background-image: url('@/assets/church_advices.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 0;
+    left: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 12, 4, 0.4);
+    z-index: 1;
+  }
+
+  .bottom-blur {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 2vw;
+  }
+  @keyframes candleFlicker {
+    0%, 100% {
+      filter: brightness(1) drop-shadow(0 0 5px rgba(255, 200, 100, 0.7));
+      transform: scale(1);
+    }
+    50% {
+      filter: brightness(1.1) drop-shadow(0 0 10px rgba(255, 220, 120, 0.9));
+      transform: scale(1.02);
+    }
+  }
+  .advices-boxes-section {
+    padding: 48px 0 120px 0;
+    margin-top: 45vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question-title {
+    color: #fff5e7;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .advice-options {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .advice-box {
+    background: #EFD5C2;
+    color: #503627;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px 0 rgba(80, 54, 39, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 28px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+  .advice-box:hover {
+    box-shadow: 0 8px 32px 0 rgba(80, 54, 39, 0.13);
+  }
+
+  .dropdown-arrow {
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: transform 0.4s ease;
+  }
+  .dropdown-arrow.open {
+    transform: rotate(180deg);
+  }
+
+  .advice-collapse-wrapper {
+    overflow: hidden;
+  }
+  .advice-content {
+    width: 100%;
+    padding-top: 18px;
+    color: #856046;
+    font-size: 1rem;
+  }
+
+  .advices-footer {
+    background: linear-gradient(90deg, #62371d 0%, #4a2512 100%);
+    color: #dfcfc1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1.8rem;
+    border-top: 2px solid #8d644b;
+    gap: 20px;
+  }
+
+  .footer-candle {
+    height: 80px; /* or desired size */
+    width: auto;
+    animation: candleFlicker 2s infinite ease-in-out;
+    transition: filter 0.2s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .footer-candle:hover {
+    filter: brightness(2) drop-shadow(0 0 40px rgba(255, 250, 180, 1));
+    transform: scale(1.1);
+  }
+
+  .footer-text {
+    color: #dfcfc1;
+    font-size: 1.45rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+  }
+}

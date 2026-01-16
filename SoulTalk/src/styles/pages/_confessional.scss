@@ -1,0 +1,95 @@
+#page-confessional .v-main {
+  position: relative;
+  min-height: 100vh;
+  overflow-y: auto;
+
+  .bg {
+    background: url('@/assets/confessional_background.svg');
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .half-width {
+    max-width: 45%;
+  }
+
+  .chat-bubble {
+    border-radius: 24px;
+    font-size: x-large;
+    word-wrap: break-word;
+  }
+
+  .left-chat {
+    background-color: #EDEDED;
+    border: 5px solid #5D2B74;
+    color: black;
+  }
+
+  .right-chat {
+    background-color: #5D2B74;
+    border: 5px solid #EDEDED;
+    color: #EDEDED;
+  }
+
+  .chat-label {
+    color: #EDEDED;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 4px;
+    background: transparent;
+    box-shadow: none;
+    max-width: 45%;
+  }
+
+  .text-left.chat-label {
+    color: #5D2B74;
+    text-align: left;
+  }
+
+  .text-right.chat-label {
+    color: #EDEDED;
+    text-align: right;
+  }
+
+  .break-word {
+    word-wrap: break-word;
+  }
+
+  .input-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    z-index: 2;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .input-field .v-field {
+    border-radius: 30px;
+  }
+
+  .send-btn {
+    background-color: #5D2B74;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    border-radius: 30px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: 10px;
+    font-size: x-large;
+    height: 56px;
+    width: 10%;
+  }
+
+  .chat-spacer {
+    height: 100px;
+  }
+}

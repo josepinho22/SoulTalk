@@ -1,0 +1,132 @@
+#page-churches .v-main {
+
+  .v-main {
+    background: none !important;
+  }
+  body {
+    background: #000;
+  }
+  .churches-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .churches-list::-webkit-scrollbar-track {
+    background: #444;
+    border-radius: 10px;
+  }
+  .churches-list::-webkit-scrollbar-thumb {
+    background: #6d28d9;
+    border-radius: 10px;
+  }
+  .churches-list::-webkit-scrollbar-thumb:hover {
+    background: #5b21b6;
+  }
+
+  /* ChurchMap.css */
+
+  .header-spacing {
+    height: 60px;
+  }
+
+  h1 {
+    color: white;
+    font-family: 'MedievalSharp', serif;
+  }
+
+  /* Liste des églises */
+  .churches-list {
+    max-height: 290px;
+    overflow-y: auto;
+    border-radius: 12px;
+  }
+
+  .churches-list .v-card {
+    background-color: #333;
+  }
+
+  .churches-list .v-card-text {
+    color: white;
+  }
+
+  #map {
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* ChurchMap.css */
+
+  body {
+    background: #000;
+  }
+
+  .header-spacing {
+    height: 60px;
+  }
+
+  .title {
+    color: white;
+    font-family: 'MedievalSharp', serif;
+  }
+
+  .search-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .search-radius-label {
+    color: white;
+    margin-right: 12px;
+  }
+
+  .radius-select {
+    width: 150px;
+  }
+
+  .churches-list {
+    max-height: 290px;
+    overflow-y: auto;
+    border-radius: 12px;
+  }
+
+  .church-card {
+    background-color: #333;
+  }
+
+  .church-card-text {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .no-churches {
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  #map {
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbar */
+  .churches-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .churches-list::-webkit-scrollbar-track {
+    background: #444;
+    border-radius: 10px;
+  }
+  .churches-list::-webkit-scrollbar-thumb {
+    background: #6d28d9;
+    border-radius: 10px;
+  }
+  .churches-list::-webkit-scrollbar-thumb:hover {
+    background: #5b21b6;
+  }
+
+}

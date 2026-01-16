@@ -1,0 +1,44 @@
+#page-contact .v-main {
+  .custom-input :deep(.v-field) {
+    background-color: #f2f2f2;
+    border: 2px solid #6e2b95;
+    border-radius: 14px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .message-field :deep(.v-field__field) {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  .custom-label {
+    margin-bottom: 6px;
+    display: block;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .custom-btn {
+    background-color: #5D2B74;
+    color: rgba(255, 255, 255, 0.87);
+    font-weight: bold;
+    text-transform: none;
+    border-radius: 24px;
+  }
+
+  .v-counter {
+    color: white !important;
+  }
+
+
+  .quote {
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    font-style: italic;
+  }
+}

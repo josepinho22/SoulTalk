@@ -1,0 +1,16 @@
+#app {
+  header {
+    all: initial;
+    background-color: transparent;
+    .v-btn.font-heading > .v-btn__content {
+      font-family: 'Grenze Gotisch', serif !important;
+      font-weight: 400 !important;
+      font-size: 20px !important;
+      text-transform: uppercase !important;
+      color: #FFFFFF !important;
+    }
+  }
+  .header-spacing {
+    margin-top: 72px;
+  }
+}
